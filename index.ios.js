@@ -1,10 +1,4 @@
-/**
- * Sample React Native App
- * https://github.com/facebook/react-native
- * @flow
- */
-
-import React, { Component } from 'react';
+import React, { Component } from 'react'
 import {
   AppRegistry,
   StyleSheet,
@@ -12,7 +6,9 @@ import {
   View,
   Image,
   TouchableOpacity
-} from 'react-native';
+} from 'react-native'
+
+import Quote from './Quote'
 
 const circleImage = require('./assets/circle.png')
 
@@ -20,10 +16,11 @@ export default class RelaxationStation extends Component {
   render() {
     return (
       <View style={styles.container}>
-        <TouchableOpacity style={styles.button} onPress={() => { alert('I am pressed') }}>
+        {/* <TouchableOpacity style={styles.button} onPress={() => { alert('I am pressed') }}>
           <Image source={circleImage} style={styles.buttonImage} />
         </TouchableOpacity>
-        <Text style={styles.readyText}>I'm ready to relax...</Text>
+        <Text style={styles.readyText}>I'm ready to relax...</Text> */}
+        <Quote quoteText='Quote' quoteSource='~ Great Source!' />
       </View>
     );
   }
@@ -34,7 +31,7 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
-    backgroundColor: '#161737',
+    backgroundColor: '#efefef',
   },
   readyText: {
     fontSize: 20,
