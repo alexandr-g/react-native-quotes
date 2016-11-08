@@ -1,30 +1,23 @@
 import React, { Component } from 'react'
 import {
-  AppRegistry,
   StyleSheet,
   Text,
   View,
   Image,
-  Navigator,
   TouchableOpacity
 } from 'react-native'
-import StartScreen from './StartScreen'
-import QuoteScreen from './QuoteScreen'
 
-export default class RelaxationStation extends Component {
+const circleImage = require('./assets/circle.png')
+
+class StartScreen extends Component {
   render() {
     return (
-      <Navigator
-        initialRoute={{ name: 'StartScreen' }}
-        renderScene={(route, navigator) => {
-          switch (route.name) {
-            case 'StartScreen':
-              return <StartScreen onStartHandler={() => navigator.push({ name: 'QuoteScreen' })} />
-            case 'QuoteScreen':
-              return <QuoteScreen />
-          }
-        }}
-      />
+      <View style={styles.container}>
+        <TouchableOpacity style={styles.button} onPress={this.props.onStartHandler}>
+          <Image source={circleImage} style={styles.buttonImage} />
+        </TouchableOpacity>
+        <Text style={styles.readyText}>I'm ready to relax...</Text>
+      </View>
     );
   }
 }
@@ -57,4 +50,4 @@ const styles = StyleSheet.create({
   }
 });
 
-AppRegistry.registerComponent('RelaxationStation', () => RelaxationStation);
+export default StartScreen
