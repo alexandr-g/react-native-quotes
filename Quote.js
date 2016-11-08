@@ -1,8 +1,7 @@
-import React, { Component } from 'react'
+import React, { Component, PropTypes } from 'react'
 import {
   View,
-  Text,
-  StyleSheet
+  Text
 } from 'react-native'
 
 class Quote extends Component {
@@ -14,6 +13,11 @@ class Quote extends Component {
       </View>
     )
   }
+}
+
+Quote.propTypes = {
+  quoteText: PropTypes.string.isRequired,
+  quoteSource: PropTypes.string.isRequired,
 }
 
 export default Quote

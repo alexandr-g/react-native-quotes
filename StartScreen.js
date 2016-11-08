@@ -16,7 +16,7 @@ class StartScreen extends Component {
         <TouchableOpacity style={styles.button} onPress={this.props.onStartHandler}>
           <Image source={circleImage} style={styles.buttonImage} />
         </TouchableOpacity>
-        <Text style={styles.readyText}>I'm ready to relax...</Text>
+        <Text style={styles.readyText}>I am ready to relax...</Text>
       </View>
     );
   }
