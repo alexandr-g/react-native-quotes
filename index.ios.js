@@ -5,6 +5,7 @@ import {
   Text,
   View,
   Image,
+  Navigator,
   TouchableOpacity
 } from 'react-native'
 
@@ -15,13 +16,20 @@ const circleImage = require('./assets/circle.png')
 export default class RelaxationStation extends Component {
   render() {
     return (
-      <View style={styles.container}>
-        {/* <TouchableOpacity style={styles.button} onPress={() => { alert('I am pressed') }}>
-          <Image source={circleImage} style={styles.buttonImage} />
-        </TouchableOpacity>
-        <Text style={styles.readyText}>I'm ready to relax...</Text> */}
-        <Quote quoteText='Quote' quoteSource='~ Great Source!' />
-      </View>
+      <Navigator
+        initialRoute={{ name: 'StartScreen' }}
+        renderScene={(route, navigator) => {
+          return (
+            <View style={styles.container}>
+              {/* <TouchableOpacity style={styles.button} onPress={() => { alert('I am pressed') }}>
+                <Image source={circleImage} style={styles.buttonImage} />
+              </TouchableOpacity>
+              <Text style={styles.readyText}>I'm ready to relax...</Text> */}
+              <Quote quoteText='Quote' quoteSource='~ Great Source!' />
+            </View>
+          )
+        }}
+      />
     );
   }
 }
