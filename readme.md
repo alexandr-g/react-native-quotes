@@ -3,4 +3,4 @@
 
 ## Quotes Screen
 
-<img width="378" alt="screen shot 2016-11-09 at 4 03 20 pm" src="https://cloud.githubusercontent.com/assets/9251327/20142883/dfa11242-a696-11e6-887f-978f919dcb1f.png">
+<img width="378" alt="screen shot 2016-11-10 at 8 58 18 pm" src="https://cloud.githubusercontent.com/assets/9251327/20192039/731699c4-a788-11e6-916c-3a6ec2dd8fcb.png">
