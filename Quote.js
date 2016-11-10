@@ -9,7 +9,7 @@ import {
 class Quote extends Component {
   render() {
     return (
-      <View>
+      <View style={styles.quoteContainer}>
         <Text style={styles.quoteText}>"{this.props.quoteText}"</Text>
         <Text style={styles.sourceText}>- {this.props.quoteSource}</Text>
       </View>
@@ -23,6 +23,10 @@ Quote.propTypes = {
 }
 
 const styles = StyleSheet.create({
+  quoteContainer: {
+    flex: 1,
+    justifyContent: 'center'
+  },
   quoteText: {
     fontFamily: (Platform.OS === 'ios') ?
         'AvenirNext-Bold' :

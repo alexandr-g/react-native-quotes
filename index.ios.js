@@ -14,8 +14,15 @@ import QuoteScreen from './QuoteScreen'
 const { quotes } = require('./quotes.json')
 
 export default class RelaxationStation extends Component {
+  constructor(props) {
+    super(props)
+
+    this.state = {
+      quoteIndex: 2,
+    }
+  }
   render() {
-    const quote = quotes[2]
+    const quote = quotes[this.state.quoteIndex]
     return (
       <Navigator
         initialRoute={{ name: 'StartScreen' }}
