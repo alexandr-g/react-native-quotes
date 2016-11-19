@@ -7,7 +7,7 @@ import {
   TouchableOpacity
 } from 'react-native'
 
-const circleImage = require('./assets/circle.png')
+const circleImage = require('../../assets/circle.png')
 
 class StartScreen extends Component {
   render() {

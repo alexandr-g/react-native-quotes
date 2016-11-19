@@ -8,8 +8,8 @@ import {
   Navigator,
   TouchableOpacity
 } from 'react-native'
-import StartScreen from './StartScreen'
-import QuoteScreen from './QuoteScreen'
+import StartScreen from './src/screens/StartScreen'
+import QuoteScreen from './src/screens/QuoteScreen'
 
 const { quotes } = require('./quotes.json')
 

@@ -5,10 +5,11 @@ import {
   Image,
   LayoutAnimation
 } from 'react-native'
-import Quote from './Quote'
-import NextQuoteButton from './NextQuoteButton'
 
-const bgImage = require('./assets/bg.png')
+import Quote from '../components/Quote'
+import NextQuoteButton from '../components/NextQuoteButton'
+
+const bgImage = require('../../assets/bg.png')
 
 const tranquil = {
   duration: 500,
